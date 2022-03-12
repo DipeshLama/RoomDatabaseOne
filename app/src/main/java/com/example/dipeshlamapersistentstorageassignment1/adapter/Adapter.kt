@@ -8,7 +8,7 @@ import com.example.dipeshlamapersistentstorageassignment1.listeners.EditDeleteCl
 import com.example.dipeshlamapersistentstorageassignment1.model.Employee
 import com.example.dipeshlamapersistentstorageassignment1.viewholder.ViewHolder
 
-class Adapter (var list : MutableList<Employee>, var listener: EditDeleteClickListener) : RecyclerView.Adapter<ViewHolder>() {
+class Adapter (var list : ArrayList<Employee>, var listener: EditDeleteClickListener) : RecyclerView.Adapter<ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.employee_list_layout,parent,false)
         return ViewHolder(view,listener)

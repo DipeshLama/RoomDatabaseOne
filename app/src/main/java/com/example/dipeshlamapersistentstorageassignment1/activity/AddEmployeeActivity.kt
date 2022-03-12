@@ -37,7 +37,7 @@ class AddEmployeeActivity : AppCompatActivity(),View.OnClickListener {
         val fullName = edtFullname.text.toString()
         val email = edtEmail.text.toString()
         val contact = edtContact.text.toString()
-        val domain = edtContact.text.toString()
+        val domain = edtDomain.text.toString()
         val salary = edtSalary.text.toString()
 
         if(isValid()){

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UpdateActivity">
+
+    <EditText
+        android:id="@+id/edtUpdateFullname"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Full Name"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/edittext_text_size"
+        android:paddingLeft="@dimen/hint_padding"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edtUpdateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Email"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/edittext_text_size"
+        android:paddingLeft="@dimen/hint_padding"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateFullname" />
+
+    <EditText
+        android:id="@+id/edtUpdateContact"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Phone number"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/edittext_text_size"
+        android:paddingLeft="@dimen/hint_padding"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateEmail" />
+
+    <EditText
+        android:id="@+id/edtUpdateDomain"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Domain: ex (Android developer)"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/edittext_text_size"
+        android:paddingLeft="@dimen/hint_padding"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateContact" />
+
+    <EditText
+        android:id="@+id/edtUpdateSalary"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Salary (Rs.)"
+        android:textColorHint="@color/hint_color"
+        android:textSize="@dimen/edittext_text_size"
+        android:paddingLeft="@dimen/hint_padding"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        android:background="@drawable/custom_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateDomain" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/custom_buttom"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/editText_margin"
+        android:layout_marginStart="@dimen/editText_margin"
+        android:layout_marginEnd="@dimen/editText_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUpdateSalary"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

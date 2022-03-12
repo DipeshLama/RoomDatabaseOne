@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="20dp"
+    android:layout_marginTop="@dimen/cardView_margin_left_top_right"
+    android:layout_marginLeft="@dimen/cardView_margin_left_top_right"
+    android:layout_marginRight="@dimen/cardView_margin_left_top_right">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txtEmployeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textViewMargin"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:text="Employee name"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="@dimen/textSize"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bin" />
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imgDelete"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/editing" />
+
+        <TextView
+            android:id="@+id/txtDomain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textViewMargin"
+            android:text="domain"
+            android:textSize="@dimen/textSize"
+            android:layout_marginStart="@dimen/textViewMargin"
+            app:layout_constraintStart_toEndOf="@+id/txtEmployeeName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="number"
+            android:textSize="@dimen/textSize"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

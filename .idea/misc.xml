@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/drawable/custom_buttom.xml" value="0.1295" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/drawable/custom_button_buynow.xml" value="0.1255" />
+        <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/drawable/custom_button_edit.xml" value="0.1255" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/drawable/custom_edittext.xml" value="0.1295" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/layout/activity_add_employee.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Dell/AndroidStudioProjects/DipeshLamaPersistentStorageAssignment1/app/src/main/res/layout/activity_employeelist.xml" value="0.19722222222222222" />

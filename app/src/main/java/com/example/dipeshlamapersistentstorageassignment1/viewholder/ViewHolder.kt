@@ -11,8 +11,8 @@ class ViewHolder (view : View, listener: EditDeleteClickListener) : RecyclerView
     val empEmail = view.txtEmail
     val empContact = view.txtContact
     val empDomain = view.txtDomain
-    val deleteEmployee = view.imgDelete
-    val editEmployee = view.imgEdit
+    val deleteEmployee = view.btnDelete
+    val editEmployee = view.btnEdit
     init {
         deleteEmployee.setOnClickListener {
             listener.onDelete(adapterPosition)

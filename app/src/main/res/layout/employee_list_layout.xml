@@ -12,7 +12,21 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/textViewMargin"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:text="Name  -"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -23,8 +37,23 @@
             android:layout_marginStart="@dimen/textViewMargin"
             android:text="Employee name"
             android:textSize="@dimen/textSize"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/txtNameTitle"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtEmailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email  -"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
 
         <TextView
             android:id="@+id/txtEmail"
@@ -32,52 +61,90 @@
             android:layout_height="wrap_content"
             android:text="email"
             android:textSize="@dimen/textSize"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toEndOf="@id/txtEmailTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
+
+
+        <TextView
+            android:id="@+id/txtDomainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position  -"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:layout_marginStart="@dimen/textViewMargin"
             android:layout_marginTop="@dimen/textViewMargin"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
-
-        <ImageView
-            android:id="@+id/imgDelete"
-            android:layout_width="30dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/bin" />
-
-        <ImageView
-            android:id="@+id/imgEdit"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imgDelete"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/editing" />
+            app:layout_constraintTop_toBottomOf="@+id/txtEmailTitle" />
 
         <TextView
             android:id="@+id/txtDomain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/textViewMargin"
-            android:text="domain"
-            android:textSize="@dimen/textSize"
             android:layout_marginStart="@dimen/textViewMargin"
-            app:layout_constraintStart_toEndOf="@+id/txtEmployeeName"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:text="Position"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintStart_toEndOf="@id/txtDomainTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+        <TextView
+            android:id="@+id/txtContactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact number  -"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDomainTitle"/>
 
         <TextView
             android:id="@+id/txtContact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="number"
+            android:text="Contact number"
             android:textSize="@dimen/textSize"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toEndOf="@id/txtContactTitle"
+            app:layout_constraintTop_toBottomOf="@+id/txtDomainTitle"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_edit"
+            android:text="Edit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             android:layout_marginStart="@dimen/textViewMargin"
             android:layout_marginTop="@dimen/textViewMargin"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+           app:layout_constraintTop_toBottomOf="@id/txtContactTitle"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_delete"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/textViewMargin"
+            android:layout_marginTop="@dimen/textViewMargin"
+            app:layout_constraintStart_toEndOf="@id/btnEdit"
+            app:layout_constraintTop_toBottomOf="@id/txtContactTitle"/>
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
